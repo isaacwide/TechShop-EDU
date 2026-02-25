@@ -1,509 +1,623 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/estilos.css">
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700;800&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/estilos.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700;800&amp;display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet" />
     <title>TIENDA DE TECNOLOGIA</title>
 </head>
+
 <body>
-<div class="layout-global">
-    <!--encabezado o menu del sitio web-->
-            <header class="encabezado fixed-top">
+    <div class="layout-global">
+        <!--encabezado o menu del sitio web-->
+        <header class="encabezado fixed-top">
+
             <div class="container">
                 <div class="contenedor-header d-flex align-items-center justify-content-between px-4 px-md-3 px-lg-5">
 
-                <div class="izquierda">
-                    <div class="logo-caja">
-                    <a href="#" class="logo">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cpu" viewBox="0 0 16 16">
-                    <path d="M5 0a.5.5 0 0 1 .5.5V2h1V.5a.5.5 0 0 1 1 0V2h1V.5a.5.5 0 0 1 1 0V2h1V.5a.5.5 0 0 1 1 0V2A2.5 2.5 0 0 1 14 4.5h1.5a.5.5 0 0 1 0 1H14v1h1.5a.5.5 0 0 1 0 1H14v1h1.5a.5.5 0 0 1 0 1H14v1h1.5a.5.5 0 0 1 0 1H14a2.5 2.5 0 0 1-2.5 2.5v1.5a.5.5 0 0 1-1 0V14h-1v1.5a.5.5 0 0 1-1 0V14h-1v1.5a.5.5 0 0 1-1 0V14h-1v1.5a.5.5 0 0 1-1 0V14A2.5 2.5 0 0 1 2 11.5H.5a.5.5 0 0 1 0-1H2v-1H.5a.5.5 0 0 1 0-1H2v-1H.5a.5.5 0 0 1 0-1H2v-1H.5a.5.5 0 0 1 0-1H2A2.5 2.5 0 0 1 4.5 2V.5A.5.5 0 0 1 5 0m-.5 3A1.5 1.5 0 0 0 3 4.5v7A1.5 1.5 0 0 0 4.5 13h7a1.5 1.5 0 0 0 1.5-1.5v-7A1.5 1.5 0 0 0 11.5 3zM5 6.5A1.5 1.5 0 0 1 6.5 5h3A1.5 1.5 0 0 1 11 6.5v3A1.5 1.5 0 0 1 9.5 11h-3A1.5 1.5 0 0 1 5 9.5zM6.5 6a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5z"/>
-                    </svg>
-                    </a>
+                    <div class="izquierda">
+                        <div class="logo-caja">
+                            <a class="logo" href="index.html">
+                                <svg class="bi bi-cpu" fill="currentColor" height="16" viewbox="0 0 16 16" width="16"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M5 0a.5.5 0 0 1 .5.5V2h1V.5a.5.5 0 0 1 1 0V2h1V.5a.5.5 0 0 1 1 0V2h1V.5a.5.5 0 0 1 1 0V2A2.5 2.5 0 0 1 14 4.5h1.5a.5.5 0 0 1 0 1H14v1h1.5a.5.5 0 0 1 0 1H14v1h1.5a.5.5 0 0 1 0 1H14v1h1.5a.5.5 0 0 1 0 1H14a2.5 2.5 0 0 1-2.5 2.5v1.5a.5.5 0 0 1-1 0V14h-1v1.5a.5.5 0 0 1-1 0V14h-1v1.5a.5.5 0 0 1-1 0V14h-1v1.5a.5.5 0 0 1-1 0V14A2.5 2.5 0 0 1 2 11.5H.5a.5.5 0 0 1 0-1H2v-1H.5a.5.5 0 0 1 0-1H2v-1H.5a.5.5 0 0 1 0-1H2v-1H.5a.5.5 0 0 1 0-1H2A2.5 2.5 0 0 1 4.5 2V.5A.5.5 0 0 1 5 0m-.5 3A1.5 1.5 0 0 0 3 4.5v7A1.5 1.5 0 0 0 4.5 13h7a1.5 1.5 0 0 0 1.5-1.5v-7A1.5 1.5 0 0 0 11.5 3zM5 6.5A1.5 1.5 0 0 1 6.5 5h3A1.5 1.5 0 0 1 11 6.5v3A1.5 1.5 0 0 1 9.5 11h-3A1.5 1.5 0 0 1 5 9.5zM6.5 6a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5z">
+                                    </path>
+                                </svg>
+                            </a>
+                        </div>
+                        <h1>TECH<span class="cambio">CORE</span></h1>
                     </div>
-                    <h1>TECH<span class="cambio">CORE</span></h1>
-                </div>
 
                     <nav class="menu d-none d-md-flex gap-4 gap-lg-5">
-                        <a href="#">Shop</a>
-                        <a href="#">Laptops</a>
-                        <a href="#">Phones</a>
-                        <a href="#">Gaming</a>
-                        <a href="#">Accesorios</a>
+                        <a href="shop.html">Shop</a>
+                        <a href="laptops.html">Laptops</a>
+                        <a href="phones.html">Phones</a>
+                        <a href="gaming.html">Gaming</a>
+                        <a href="accessories.html">Accessories</a>
                     </nav>
 
-            <div class="derecha d-flex align-items-center gap-3 gap-lg-4">
-                <a href="#" class="imgs">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
-                    </svg>
-                </a>
-
-                    <a href="#" class="imgs carrito">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
-                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
-                    </svg>
-
-                        
-                        <span class="badge-carrito" id="cartCount">3</span>
-                    </a>
-            
-                <a href="#" class="imgs">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
-                    <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/>
-                    </svg>
-                </a>
-            </div>
-
-
-            </div>
-        </div>
-    </header>
-   
-
-
-
- <div class="hero-wrapper">
-    <section class="hero">
-        <div class="container hero-container">
-
-            <!-- etiqueta superior -->
-            <div class="novedad-caja">
-                <a href="#" class="sub">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                    fill="currentColor" class="bi bi-lightning-fill icono-rayo"
-                    viewBox="0 0 16 16">
-                        <path d="M5.52.359A.5.5 0 0 1 6 0h4a.5.5 0 0 1 .474.658L8.694 6H12.5a.5.5 0 0 1 .395.807l-7 9a.5.5 0 0 1-.873-.454L6.823 9.5H3.5a.5.5 0 0 1-.48-.641z"/>
-                    </svg>
-                    NEW GENERATION ARRIVED
-                </a>
-            </div>
-
-            <div class="row align-items-center hero-main">
-
-                <!-- texto -->
-                <div class="col-lg-6 col-12 ">
-                    <h2 class="titulo-grande">
-                        <span class="linea">EVOLVE</span>
-                        <span class="linea">YOUR</span>
-                        <span class="linea gradiente">DIGITAL</span>
-                        <span class="linea gradiente">GEAR</span>
-                    </h2>
-
-                    <p class="descripcion">
-                        Experience the future of performance with our curated</p>
-                    <p class="descripcion">  collection of cutting-edge hardware and accessories.</p>
-                    
-                    <div class="botones-hero">
-                        <button class="btn btn-light btn-hero-primary me-3">
-                            Explore Store
-                            <a href="" class="flecha">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                fill="currentColor" class="bi bi-arrow-right flecha"
-                                viewBox="0 0 16 16">
-                                <path fill-rule="evenodd"
-                                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
-                            </svg></a>
-                        </button>
-                        <button class=" btn  btn-outline-light btn-hero-secondary"><span>Watch Trailer</span> </button>
+                    <div class="derecha d-flex align-items-center gap-3 gap-lg-4">
+                        <a class="imgs" href="#">
+                            <svg class="bi bi-search" fill="currentColor" height="16" viewbox="0 0 16 16" width="16"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0">
+                                </path>
+                            </svg>
+                        </a>
+                        <a class="imgs carrito" href="#">
+                            <svg class="bi bi-cart3" fill="currentColor" height="16" viewbox="0 0 16 16" width="16"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2">
+                                </path>
+                            </svg>
+                            <span class="badge-carrito" id="cartCount">3</span>
+                        </a>
+                        <a class="imgs" href="#">
+                            <svg class="bi bi-person" fill="currentColor" height="16" viewbox="0 0 16 16" width="16"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z">
+                                </path>
+                            </svg>
+                        </a>
                     </div>
+                </div>
             </div>
+        </header>
 
+        <div class="hero-wrapper">
+            <section class="hero">
+                <div class="container hero-container">
+                    <!-- etiqueta superior -->
+                    <div class="novedad-caja">
+                        <a class="sub" href="#">
+                            <svg class="bi bi-lightning-fill icono-rayo" fill="currentColor" height="16"
+                                viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M5.52.359A.5.5 0 0 1 6 0h4a.5.5 0 0 1 .474.658L8.694 6H12.5a.5.5 0 0 1 .395.807l-7 9a.5.5 0 0 1-.873-.454L6.823 9.5H3.5a.5.5 0 0 1-.48-.641z">
+                                </path>
+                            </svg>
+                            NEW GENERATION ARRIVED
+                        </a>
+                    </div>
+                    <div class="row align-items-center hero-main">
+                        <!-- texto -->
+                        <div class="col-lg-6 col-12">
+                            <h2 class="titulo-grande">
+                                <span class="linea">EVOLVE</span>
+                                <span class="linea">YOUR</span>
+                                <span class="linea gradiente">DIGITAL</span>
+                                <span class="linea gradiente">GEAR</span>
+                            </h2>
+                            <p class="descripcion">
+                                Experience the future of performance with our curated</p>
+                            <p class="descripcion"> collection of cutting-edge hardware and accessories.</p>
+                            <div class="botones-hero">
+                                <a class="btn btn-light btn-hero-primary me-3" href="shop.html">
+                                    Explore Store
+
+                                    <svg class="bi bi-arrow-right flecha" fill="currentColor" height="16"
+                                        viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
+                                            fill-rule="evenodd"></path>
+                                    </svg>
+                                </a>
+                                <button class="btn btn-outline-light btn-hero-secondary"><span>Watch Trailer</span>
+                                </button>
+                            </div>
+                        </div>
                         <!-- imagen -->
                         <div class="col-lg-6 col-12 position-relative">
-                            
                             <!-- RTX Badge -->
                             <div class="rtx-badge">
-
                                 <div class="rtx-icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cpu" viewBox="0 0 16 16">
-                                <path d="M5 0a.5.5 0 0 1 .5.5V2h1V.5a.5.5 0 0 1 1 0V2h1V.5a.5.5 0 0 1 1 0V2h1V.5a.5.5 0 0 1 1 0V2A2.5 2.5 0 0 1 14 4.5h1.5a.5.5 0 0 1 0 1H14v1h1.5a.5.5 0 0 1 0 1H14v1h1.5a.5.5 0 0 1 0 1H14v1h1.5a.5.5 0 0 1 0 1H14a2.5 2.5 0 0 1-2.5 2.5v1.5a.5.5 0 0 1-1 0V14h-1v1.5a.5.5 0 0 1-1 0V14h-1v1.5a.5.5 0 0 1-1 0V14h-1v1.5a.5.5 0 0 1-1 0V14A2.5 2.5 0 0 1 2 11.5H.5a.5.5 0 0 1 0-1H2v-1H.5a.5.5 0 0 1 0-1H2v-1H.5a.5.5 0 0 1 0-1H2v-1H.5a.5.5 0 0 1 0-1H2A2.5 2.5 0 0 1 4.5 2V.5A.5.5 0 0 1 5 0m-.5 3A1.5 1.5 0 0 0 3 4.5v7A1.5 1.5 0 0 0 4.5 13h7a1.5 1.5 0 0 0 1.5-1.5v-7A1.5 1.5 0 0 0 11.5 3zM5 6.5A1.5 1.5 0 0 1 6.5 5h3A1.5 1.5 0 0 1 11 6.5v3A1.5 1.5 0 0 1 9.5 11h-3A1.5 1.5 0 0 1 5 9.5zM6.5 6a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5z"/>
-                                </svg>
+                                    <svg class="bi bi-cpu" fill="currentColor" height="16" viewbox="0 0 16 16"
+                                        width="16" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M5 0a.5.5 0 0 1 .5.5V2h1V.5a.5.5 0 0 1 1 0V2h1V.5a.5.5 0 0 1 1 0V2h1V.5a.5.5 0 0 1 1 0V2A2.5 2.5 0 0 1 14 4.5h1.5a.5.5 0 0 1 0 1H14v1h1.5a.5.5 0 0 1 0 1H14v1h1.5a.5.5 0 0 1 0 1H14v1h1.5a.5.5 0 0 1 0 1H14a2.5 2.5 0 0 1-2.5 2.5v1.5a.5.5 0 0 1-1 0V14h-1v1.5a.5.5 0 0 1-1 0V14h-1v1.5a.5.5 0 0 1-1 0V14h-1v1.5a.5.5 0 0 1-1 0V14A2.5 2.5 0 0 1 2 11.5H.5a.5.5 0 0 1 0-1H2v-1H.5a.5.5 0 0 1 0-1H2v-1H.5a.5.5 0 0 1 0-1H2v-1H.5a.5.5 0 0 1 0-1H2A2.5 2.5 0 0 1 4.5 2V.5A.5.5 0 0 1 5 0m-.5 3A1.5 1.5 0 0 0 3 4.5v7A1.5 1.5 0 0 0 4.5 13h7a1.5 1.5 0 0 0 1.5-1.5v-7A1.5 1.5 0 0 0 11.5 3zM5 6.5A1.5 1.5 0 0 1 6.5 5h3A1.5 1.5 0 0 1 11 6.5v3A1.5 1.5 0 0 1 9.5 11h-3A1.5 1.5 0 0 1 5 9.5zM6.5 6a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5z">
+                                        </path>
+                                    </svg>
                                 </div>
-
                                 <div class="rtx-content">
                                     <span class="rtx-title">RTX 5090 Ready</span>
                                     <span class="rtx-sub">Peak Performance</span>
                                 </div>
-
                             </div>
-
                             <!-- Imagen -->
-                            <img src="img/img1.jpg" class="img-fluid rounded-4 imagen-hero">
-
+                            <img class="img-fluid rounded-4 imagen-hero" src="img/img1.jpg" />
                         </div>
+                    </div>
                 </div>
-
-            </div>
-    
-
-        </section>
+            </section>
             <div class="numeros mt-4">
                 <div class="row justify-content-center justify-content-md-start text-center text-md-start g-4">
-
                     <div class="col-auto">
                         <h3 class="numero">50k+</h3>
                         <p class="frase">Active Users</p>
                     </div>
-
                     <div class="col-auto">
                         <h3 class="numero">4.9/5</h3>
                         <p class="frase">Global Rating</p>
                     </div>
-
                     <div class="col-auto">
                         <h3 class="numero">24/7</h3>
                         <p class="frase">Expert Support</p>
                     </div>
-
                 </div>
             </div>
-
-
-
+        </div>
+        <div class="categorias">
+            <div class="brows">
+                <h1>BROWSE CATEGORIES</h1>
+                <p>View All</p>
+            </div>
+        </div>
         
-</div>
+        <div class="productos-grid">
 
-    <div class="categorias">
-        <div class="brows">
-            <H1>BROWSE CATEGORIES</H1>
-            <P>View All</P>
+            <a class="producto-card" href="#">
+                <div class="icono">
+                    <svg class="bi bi-laptop" fill="currentColor" height="16" viewbox="0 0 16 16" width="16"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M13.5 3a.5.5 0 0 1 .5.5V11H2V3.5a.5.5 0 0 1 .5-.5zm-11-1A1.5 1.5 0 0 0 1 3.5V12h14V3.5A1.5 1.5 0 0 0 13.5 2zM0 12.5h16a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 12.5">
+                        </path>
+                    </svg>
+                </div>
+                <span class="produ">Laptops</span>
+                <p class="des">124 products</p>
+            </a>
+
+            <a class="producto-card" href="#">
+                <div class="icono">
+                    <svg class="bi bi-phone" fill="currentColor" height="16" viewbox="0 0 16 16" width="16"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z">
+                        </path>
+                        <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2"></path>
+                    </svg>
+                </div>
+                <span class="produ">Phone</span>
+                <p class="des">80 products</p>
+            </a>
+
+            <a class="producto-card" href="#">
+                <div class="icono">
+                    <svg class="bi bi-headphones" fill="currentColor" height="16" viewbox="0 0 16 16" width="16"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M8 3a5 5 0 0 0-5 5v1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V8a6 6 0 1 1 12 0v5a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h1V8a5 5 0 0 0-5-5">
+                        </path>
+                    </svg>
+                </div>
+                <span class="produ">Audio</span>
+                <p class="des">42 products</p>
+            </a>
+
+            <a class="producto-card" href="#">
+                <div class="icono">
+                    <svg class="bi bi-controller" fill="currentColor" height="16" viewbox="0 0 16 16" width="16"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M11.5 6.027a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0m-1.5 1.5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1m2.5-.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0m-1.5 1.5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1m-6.5-3h1v1h1v1h-1v1h-1v-1h-1v-1h1z">
+                        </path>
+                        <path
+                            d="M3.051 3.26a.5.5 0 0 1 .354-.613l1.932-.518a.5.5 0 0 1 .62.39c.655-.079 1.35-.117 2.043-.117.72 0 1.443.041 2.12.126a.5.5 0 0 1 .622-.399l1.932.518a.5.5 0 0 1 .306.729q.211.136.373.297c.408.408.78 1.05 1.095 1.772.32.733.599 1.591.805 2.466s.34 1.78.364 2.606c.024.816-.059 1.602-.328 2.21a1.42 1.42 0 0 1-1.445.83c-.636-.067-1.115-.394-1.513-.773-.245-.232-.496-.526-.739-.808-.126-.148-.25-.292-.368-.423-.728-.804-1.597-1.527-3.224-1.527s-2.496.723-3.224 1.527c-.119.131-.242.275-.368.423-.243.282-.494.575-.739.808-.398.38-.877.706-1.513.773a1.42 1.42 0 0 1-1.445-.83c-.27-.608-.352-1.395-.329-2.21.024-.826.16-1.73.365-2.606.206-.875.486-1.733.805-2.466.315-.722.687-1.364 1.094-1.772a2.3 2.3 0 0 1 .433-.335l-.028-.079zm2.036.412c-.877.185-1.469.443-1.733.708-.276.276-.587.783-.885 1.465a14 14 0 0 0-.748 2.295 12.4 12.4 0 0 0-.339 2.406c-.022.755.062 1.368.243 1.776a.42.42 0 0 0 .426.24c.327-.034.61-.199.929-.502.212-.202.4-.423.615-.674.133-.156.276-.323.44-.504C4.861 9.969 5.978 9.027 8 9.027s3.139.942 3.965 1.855c.164.181.307.348.44.504.214.251.403.472.615.674.318.303.601.468.929.503a.42.42 0 0 0 .426-.241c.18-.408.265-1.02.243-1.776a12.4 12.4 0 0 0-.339-2.406 14 14 0 0 0-.748-2.295c-.298-.682-.61-1.19-.885-1.465-.264-.265-.856-.523-1.733-.708-.85-.179-1.877-.27-2.913-.27s-2.063.091-2.913.27">
+                        </path>
+                    </svg>
+                </div>
+                <span class="produ">Gaming</span>
+                <p class="des">64 products</p>
+            </a>
+
+            <a class="producto-card" href="#">
+                <div class="icono">
+                    <svg class="bi bi-smartwatch" fill="currentColor" height="16" viewbox="0 0 16 16" width="16"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9 5a.5.5 0 0 0-1 0v3H6a.5.5 0 0 0 0 1h2.5a.5.5 0 0 0 .5-.5z"></path>
+                        <path
+                            d="M4 1.667v.383A2.5 2.5 0 0 0 2 4.5v7a2.5 2.5 0 0 0 2 2.45v.383C4 15.253 4.746 16 5.667 16h4.666c.92 0 1.667-.746 1.667-1.667v-.383a2.5 2.5 0 0 0 2-2.45V8h.5a.5.5 0 0 0 .5-.5v-2a.5.5 0 0 0-.5-.5H14v-.5a2.5 2.5 0 0 0-2-2.45v-.383C12 .747 11.254 0 10.333 0H5.667C4.747 0 4 .746 4 1.667M4.5 3h7A1.5 1.5 0 0 1 13 4.5v7a1.5 1.5 0 0 1-1.5 1.5h-7A1.5 1.5 0 0 1 3 11.5v-7A1.5 1.5 0 0 1 4.5 3">
+                        </path>
+                    </svg>
+                </div>
+                <span class="produ">Wearables</span>
+                <p class="des">32 products</p>
+            </a>
+
+            <a class="producto-card" href="#">
+                <div class="icono">
+                    <svg class="bi bi-display" fill="currentColor" height="16" viewbox="0 0 16 16" width="16"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M0 4s0-2 2-2h12s2 0 2 2v6s0 2-2 2h-4q0 1 .25 1.5H11a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1h.75Q6 13 6 12H2s-2 0-2-2zm1.398-.855a.76.76 0 0 0-.254.302A1.5 1.5 0 0 0 1 4.01V10c0 .325.078.502.145.602q.105.156.302.254a1.5 1.5 0 0 0 .538.143L2.01 11H14c.325 0 .502-.078.602-.145a.76.76 0 0 0 .254-.302 1.5 1.5 0 0 0 .143-.538L15 9.99V4c0-.325-.078-.502-.145-.602a.76.76 0 0 0-.302-.254A1.5 1.5 0 0 0 13.99 3H2c-.325 0-.502.078-.602.145">
+                        </path>
+                    </svg>
+                </div>
+                <span class="produ">Laptops</span>
+                <p class="des">18 products</p>
+            </a>
+
         </div>
 
-    </div>
-
-    <div class="productos-grid">
-            <a href="#" class="producto-card">
-                <div class="icono">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-laptop" viewBox="0 0 16 16">
-            <path d="M13.5 3a.5.5 0 0 1 .5.5V11H2V3.5a.5.5 0 0 1 .5-.5zm-11-1A1.5 1.5 0 0 0 1 3.5V12h14V3.5A1.5 1.5 0 0 0 13.5 2zM0 12.5h16a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 12.5"/>
-            </svg></div>
-            <span class="produ">Laptops</span>
-            <p class="des">124 products</p>
-
-        </a>
-    
-
-
-
-
-            <a href="#" class="producto-card">
-                <div class="icono">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-phone" viewBox="0 0 16 16">
-                <path d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
-                <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2"/>
-                </svg>
-            </div>
-             <span class="produ">Phone</span>
-            <p class="des">80 products</p>
-
-        </a>
-
-
-
-
-            <a href="#" class="producto-card">
-                <div class="icono">
-                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-headphones" viewBox="0 0 16 16">
-                        <path d="M8 3a5 5 0 0 0-5 5v1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V8a6 6 0 1 1 12 0v5a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h1V8a5 5 0 0 0-5-5"/>
-                        </svg>
-            </div>
-            <span class="produ">Audio</span>
-            <p class="des">42 products</p>
-
-        </a>
-
-
-
-
-
-            <a href="#" class="producto-card">
-                <div class="icono">
-               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-controller" viewBox="0 0 16 16">
-                <path d="M11.5 6.027a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0m-1.5 1.5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1m2.5-.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0m-1.5 1.5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1m-6.5-3h1v1h1v1h-1v1h-1v-1h-1v-1h1z"/>
-                <path d="M3.051 3.26a.5.5 0 0 1 .354-.613l1.932-.518a.5.5 0 0 1 .62.39c.655-.079 1.35-.117 2.043-.117.72 0 1.443.041 2.12.126a.5.5 0 0 1 .622-.399l1.932.518a.5.5 0 0 1 .306.729q.211.136.373.297c.408.408.78 1.05 1.095 1.772.32.733.599 1.591.805 2.466s.34 1.78.364 2.606c.024.816-.059 1.602-.328 2.21a1.42 1.42 0 0 1-1.445.83c-.636-.067-1.115-.394-1.513-.773-.245-.232-.496-.526-.739-.808-.126-.148-.25-.292-.368-.423-.728-.804-1.597-1.527-3.224-1.527s-2.496.723-3.224 1.527c-.119.131-.242.275-.368.423-.243.282-.494.575-.739.808-.398.38-.877.706-1.513.773a1.42 1.42 0 0 1-1.445-.83c-.27-.608-.352-1.395-.329-2.21.024-.826.16-1.73.365-2.606.206-.875.486-1.733.805-2.466.315-.722.687-1.364 1.094-1.772a2.3 2.3 0 0 1 .433-.335l-.028-.079zm2.036.412c-.877.185-1.469.443-1.733.708-.276.276-.587.783-.885 1.465a14 14 0 0 0-.748 2.295 12.4 12.4 0 0 0-.339 2.406c-.022.755.062 1.368.243 1.776a.42.42 0 0 0 .426.24c.327-.034.61-.199.929-.502.212-.202.4-.423.615-.674.133-.156.276-.323.44-.504C4.861 9.969 5.978 9.027 8 9.027s3.139.942 3.965 1.855c.164.181.307.348.44.504.214.251.403.472.615.674.318.303.601.468.929.503a.42.42 0 0 0 .426-.241c.18-.408.265-1.02.243-1.776a12.4 12.4 0 0 0-.339-2.406 14 14 0 0 0-.748-2.295c-.298-.682-.61-1.19-.885-1.465-.264-.265-.856-.523-1.733-.708-.85-.179-1.877-.27-2.913-.27s-2.063.091-2.913.27"/>
-                </svg>
-        </div>
-             <span class="produ">Gaming</span>
-            <p class="des">64 products</p>
-
-        </a>
-
-
-
-
-
-            <a href="#" class="producto-card">
-                <div class="icono">
-                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-smartwatch" viewBox="0 0 16 16">
-            <path d="M9 5a.5.5 0 0 0-1 0v3H6a.5.5 0 0 0 0 1h2.5a.5.5 0 0 0 .5-.5z"/>
-            <path d="M4 1.667v.383A2.5 2.5 0 0 0 2 4.5v7a2.5 2.5 0 0 0 2 2.45v.383C4 15.253 4.746 16 5.667 16h4.666c.92 0 1.667-.746 1.667-1.667v-.383a2.5 2.5 0 0 0 2-2.45V8h.5a.5.5 0 0 0 .5-.5v-2a.5.5 0 0 0-.5-.5H14v-.5a2.5 2.5 0 0 0-2-2.45v-.383C12 .747 11.254 0 10.333 0H5.667C4.747 0 4 .746 4 1.667M4.5 3h7A1.5 1.5 0 0 1 13 4.5v7a1.5 1.5 0 0 1-1.5 1.5h-7A1.5 1.5 0 0 1 3 11.5v-7A1.5 1.5 0 0 1 4.5 3"/>
-            </svg>
-            </div>
-                 <span class="produ">Wearables</span>
-            <p class="des">32 products</p>
-
-        </a>
- 
-
-
-
-
-            <a href="#" class="producto-card">
-                <div class="icono">
-               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-display" viewBox="0 0 16 16">
-            <path d="M0 4s0-2 2-2h12s2 0 2 2v6s0 2-2 2h-4q0 1 .25 1.5H11a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1h.75Q6 13 6 12H2s-2 0-2-2zm1.398-.855a.76.76 0 0 0-.254.302A1.5 1.5 0 0 0 1 4.01V10c0 .325.078.502.145.602q.105.156.302.254a1.5 1.5 0 0 0 .538.143L2.01 11H14c.325 0 .502-.078.602-.145a.76.76 0 0 0 .254-.302 1.5 1.5 0 0 0 .143-.538L15 9.99V4c0-.325-.078-.502-.145-.602a.76.76 0 0 0-.302-.254A1.5 1.5 0 0 0 13.99 3H2c-.325 0-.502.078-.602.145"/>
-            </svg>  
-        </div>
-             <span class="produ">Laptops</span>
-            <p class="des">18 products</p>
-
-        </a>
-        </div>
-
-    <!-- =========================
+        <!-- =========================
          MARCAS
     ========================= -->
-    <section class="brands-bar">
-        <div class="brands-inner">
-            <span>NVIDIA</span>
-            <span>AMD</span>
-            <span>INTEL</span>
-            <span>RAZER</span>
-            <span>LOGITECH</span>
-            <span>ASUS</span>
-        </div>
-    </section>
+        <section class="brands-bar">
+            <div class="brands-inner">
+                <span>NVIDIA</span>
+                <span>AMD</span>
+                <span>INTEL</span>
+                <span>RAZER</span>
+                <span>LOGITECH</span>
+                <span>ASUS</span>
+            </div>
+        </section>
 
-    <!-- =========================
+        <!-- =========================
          BEST SELLERS
     ========================= -->
-    <section class="best-sellers" id="bestSellers">
-        <div class="section-head">
-            <div>
-                <h2 class="section-title">BEST SELLERS</h2>
-                <div class="section-underline"></div>
-            </div>
-
-            <div class="section-actions">
-                <button class="chip-btn js-open-filters" type="button">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-funnel" viewBox="0 0 16 16">
-                        <path d="M1.5 1.5A.5.5 0 0 1 2 1h12a.5.5 0 0 1 .39.812l-4.9 6.125V13a1 1 0 0 1-1.447.894l-2-1A1 1 0 0 1 5.5 12V7.937l-4.9-6.125A.5.5 0 0 1 1.5 1.5"/>
-                    </svg>
-                    <span>Filters</span>
-                </button>
-
-                <button class="chip-btn js-open-sort" type="button">
-                    <span>Featured</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
-                    </svg>
-                </button>
-            </div>
-        </div>
-
-        <div class="best-grid" id="productsGrid">
-            <!-- Productos  -->
-            <article class="p-card" data-product-id="1">
-                <div class="p-media">
-                    <span class="p-badge">NEW ARRIVAL</span>
-                    <button class="p-wish js-toggle-wishlist" type="button" aria-label="Add to wishlist" data-product-id="1">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
-                            <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
+        <section class="best-sellers" id="bestSellers">
+            <div class="section-head">
+                <div>
+                    <h2 class="section-title">BEST SELLERS</h2>
+                    <div class="section-underline"></div>
+                </div>
+                <div class="section-actions">
+                    <button class="chip-btn js-open-filters" type="button">
+                        <svg class="bi bi-funnel" fill="currentColor" height="16" viewbox="0 0 16 16" width="16"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M1.5 1.5A.5.5 0 0 1 2 1h12a.5.5 0 0 1 .39.812l-4.9 6.125V13a1 1 0 0 1-1.447.894l-2-1A1 1 0 0 1 5.5 12V7.937l-4.9-6.125A.5.5 0 0 1 1.5 1.5">
+                            </path>
+                        </svg>
+                        <span>Filters</span>
+                    </button>
+                    <button class="chip-btn js-open-sort" type="button">
+                        <span>Featured</span>
+                        <svg class="bi bi-chevron-down" fill="currentColor" height="16" viewbox="0 0 16 16" width="16"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"
+                                fill-rule="evenodd"></path>
                         </svg>
                     </button>
-                    <img src="https://images.unsplash.com/photo-1760999896198-b7e780e42500?auto=format&fit=crop&q=80&w=900" alt="Nebula Pro X Laptop" loading="lazy">
                 </div>
-                <div class="p-body">
-                    <div class="p-rating" aria-label="Rated 4.9 out of 5"><span class="stars">★★★★☆</span><span class="score">(4.9)</span></div>
-                    <div class="p-cat">LAPTOPS</div>
-                    <h3 class="p-name">Nebula Pro X Laptop</h3>
-                    <div class="p-bottom">
-                        <div class="p-price">$2,499.00</div>
-                        <button class="p-cart js-add-to-cart" type="button" aria-label="Add to cart" data-product-id="1">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
-                                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5"/>
+            </div>
+            <div class="best-grid" id="productsGrid">
+                <!-- Productos  -->
+                <article class="p-card" data-product-id="1">
+                    <div class="p-media">
+                        <span class="p-badge">NEW ARRIVAL</span>
+                        <button aria-label="Add to wishlist" class="p-wish js-toggle-wishlist" data-product-id="1"
+                            type="button">
+                            <svg class="bi bi-heart" fill="currentColor" height="16" viewbox="0 0 16 16" width="16"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15">
+                                </path>
                             </svg>
                         </button>
+                        <img alt="Nebula Pro X Laptop" loading="lazy"
+                            src="https://images.unsplash.com/photo-1760999896198-b7e780e42500?auto=format&amp;fit=crop&amp;q=80&amp;w=900" />
                     </div>
-                </div>
-            </article>
+                    <div class="p-body">
+                        <div aria-label="Rated 4.9 out of 5" class="p-rating"><span class="stars">★★★★☆</span><span
+                                class="score">(4.9)</span></div>
+                        <div class="p-cat">LAPTOPS</div>
+                        <h3 class="p-name">Nebula Pro X Laptop</h3>
+                        <div class="p-bottom">
+                            <div class="p-price">$2,499.00</div>
+                            <button aria-label="Add to cart" class="p-cart js-add-to-cart" data-product-id="1"
+                                type="button">
+                                <svg class="bi bi-cart3" fill="currentColor" height="18" viewbox="0 0 16 16" width="18"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5">
+                                    </path>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+                <article class="p-card" data-product-id="2">
+                    <div class="p-media">
+                        <button aria-label="Add to wishlist" class="p-wish js-toggle-wishlist" data-product-id="2"
+                            type="button">
+                            <svg class="bi bi-heart" fill="currentColor" height="16" viewbox="0 0 16 16" width="16"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15">
+                                </path>
+                            </svg>
+                        </button>
+                        <img alt="Titan S24 Ultra" loading="lazy"
+                            src="https://images.unsplash.com/photo-1587804979330-6fedf0e229b2?auto=format&amp;fit=crop&amp;q=80&amp;w=900" />
+                    </div>
+                    <div class="p-body">
+                        <div class="p-rating"><span class="stars">★★★★☆</span><span class="score">(4.8)</span></div>
+                        <div class="p-cat">PHONES</div>
+                        <h3 class="p-name">Titan S24 Ultra</h3>
+                        <div class="p-bottom">
+                            <div class="p-price">$1,199.00</div><button aria-label="Add to cart"
+                                class="p-cart js-add-to-cart" data-product-id="2" type="button"><svg class="bi bi-cart3"
+                                    fill="currentColor" height="18" viewbox="0 0 16 16" width="18"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5">
+                                    </path>
+                                </svg></button>
+                        </div>
+                    </div>
+                </article>
+                <article class="p-card" data-product-id="3">
+                    <div class="p-media">
+                        <button aria-label="Add to wishlist" class="p-wish js-toggle-wishlist" data-product-id="3"
+                            type="button">
+                            <svg class="bi bi-heart" fill="currentColor" height="16" viewbox="0 0 16 16" width="16"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15">
+                                </path>
+                            </svg>
+                        </button>
+                        <img alt="SonicWave Wireless" loading="lazy"
+                            src="https://images.unsplash.com/photo-1712369448819-2ca1105339cf?auto=format&amp;fit=crop&amp;q=80&amp;w=900" />
+                    </div>
+                    <div class="p-body">
+                        <div class="p-rating"><span class="stars">★★★★☆</span><span class="score">(4.7)</span></div>
+                        <div class="p-cat">AUDIO</div>
+                        <h3 class="p-name">SonicWave Wireless</h3>
+                        <div class="p-bottom">
+                            <div class="p-price">$349.00</div><button aria-label="Add to cart"
+                                class="p-cart js-add-to-cart" data-product-id="3" type="button"><svg class="bi bi-cart3"
+                                    fill="currentColor" height="18" viewbox="0 0 16 16" width="18"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5">
+                                    </path>
+                                </svg></button>
+                        </div>
+                    </div>
+                </article>
+                <article class="p-card" data-product-id="4">
+                    <div class="p-media">
+                        <span class="p-badge">NEW ARRIVAL</span>
+                        <button aria-label="Add to wishlist" class="p-wish js-toggle-wishlist" data-product-id="4"
+                            type="button">
+                            <svg class="bi bi-heart" fill="currentColor" height="16" viewbox="0 0 16 16" width="16"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15">
+                                </path>
+                            </svg>
+                        </button>
+                        <img alt="Nova Mech Keyboard" loading="lazy"
+                            src="https://images.unsplash.com/photo-1766601269422-a6673de6daf3?auto=format&amp;fit=crop&amp;q=80&amp;w=900" />
+                    </div>
+                    <div class="p-body">
+                        <div class="p-rating"><span class="stars">★★★★☆</span><span class="score">(4.9)</span></div>
+                        <div class="p-cat">ACCESSORIES</div>
+                        <h3 class="p-name">Nova Mech Keyboard</h3>
+                        <div class="p-bottom">
+                            <div class="p-price">$189.00</div><button aria-label="Add to cart"
+                                class="p-cart js-add-to-cart" data-product-id="4" type="button"><svg class="bi bi-cart3"
+                                    fill="currentColor" height="18" viewbox="0 0 16 16" width="18"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5">
+                                    </path>
+                                </svg></button>
+                        </div>
+                    </div>
+                </article>
+                <article class="p-card" data-product-id="5">
+                    <div class="p-media">
+                        <button aria-label="Add to wishlist" class="p-wish js-toggle-wishlist" data-product-id="5"
+                            type="button">
+                            <svg class="bi bi-heart" fill="currentColor" height="16" viewbox="0 0 16 16" width="16"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15">
+                                </path>
+                            </svg>
+                        </button>
+                        <img alt="Horizon Ultrawide 49" loading="lazy"
+                            src="https://images.unsplash.com/photo-1653823815301-faf2f30db0bd?auto=format&amp;fit=crop&amp;q=80&amp;w=900" />
+                    </div>
+                    <div class="p-body">
+                        <div class="p-rating"><span class="stars">★★★★☆</span><span class="score">(4.6)</span></div>
+                        <div class="p-cat">DISPLAYS</div>
+                        <h3 class="p-name">Horizon Ultrawide 49"</h3>
+                        <div class="p-bottom">
+                            <div class="p-price">$1,299.00</div><button aria-label="Add to cart"
+                                class="p-cart js-add-to-cart" data-product-id="5" type="button"><svg class="bi bi-cart3"
+                                    fill="currentColor" height="18" viewbox="0 0 16 16" width="18"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5">
+                                    </path>
+                                </svg></button>
+                        </div>
+                    </div>
+                </article>
+                <article class="p-card" data-product-id="6">
+                    <div class="p-media">
+                        <button aria-label="Add to wishlist" class="p-wish js-toggle-wishlist" data-product-id="6"
+                            type="button">
+                            <svg class="bi bi-heart" fill="currentColor" height="16" viewbox="0 0 16 16" width="16"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15">
+                                </path>
+                            </svg>
+                        </button>
+                        <img alt="Aero Stealth Watch" loading="lazy"
+                            src="https://images.unsplash.com/photo-1758348844348-acaf8d854665?auto=format&amp;fit=crop&amp;q=80&amp;w=900" />
+                    </div>
+                    <div class="p-body">
+                        <div class="p-rating"><span class="stars">★★★★☆</span><span class="score">(4.5)</span></div>
+                        <div class="p-cat">WEARABLES</div>
+                        <h3 class="p-name">Aero Stealth Watch</h3>
+                        <div class="p-bottom">
+                            <div class="p-price">$399.00</div><button aria-label="Add to cart"
+                                class="p-cart js-add-to-cart" data-product-id="6" type="button"><svg class="bi bi-cart3"
+                                    fill="currentColor" height="18" viewbox="0 0 16 16" width="18"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5">
+                                    </path>
+                                </svg></button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="view-all-wrap">
+                <button class="view-all-btn" type="button">View All Products <svg class="bi bi-arrow-right"
+                        fill="currentColor" height="16" viewbox="0 0 16 16" width="16"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
+                            fill-rule="evenodd"></path>
+                    </svg></button>
+            </div>
+        </section>
 
-            <article class="p-card" data-product-id="2">
-                <div class="p-media">
-                    <button class="p-wish js-toggle-wishlist" type="button" aria-label="Add to wishlist" data-product-id="2">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16"><path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/></svg>
-                    </button>
-                    <img src="https://images.unsplash.com/photo-1587804979330-6fedf0e229b2?auto=format&fit=crop&q=80&w=900" alt="Titan S24 Ultra" loading="lazy">
-                </div>
-                <div class="p-body">
-                    <div class="p-rating"><span class="stars">★★★★☆</span><span class="score">(4.8)</span></div>
-                    <div class="p-cat">PHONES</div>
-                    <h3 class="p-name">Titan S24 Ultra</h3>
-                    <div class="p-bottom"><div class="p-price">$1,199.00</div><button class="p-cart js-add-to-cart" type="button" aria-label="Add to cart" data-product-id="2"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16"><path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5"/></svg></button></div>
-                </div>
-            </article>
-
-            <article class="p-card" data-product-id="3">
-                <div class="p-media">
-                    <button class="p-wish js-toggle-wishlist" type="button" aria-label="Add to wishlist" data-product-id="3">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16"><path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/></svg>
-                    </button>
-                    <img src="https://images.unsplash.com/photo-1712369448819-2ca1105339cf?auto=format&fit=crop&q=80&w=900" alt="SonicWave Wireless" loading="lazy">
-                </div>
-                <div class="p-body">
-                    <div class="p-rating"><span class="stars">★★★★☆</span><span class="score">(4.7)</span></div>
-                    <div class="p-cat">AUDIO</div>
-                    <h3 class="p-name">SonicWave Wireless</h3>
-                    <div class="p-bottom"><div class="p-price">$349.00</div><button class="p-cart js-add-to-cart" type="button" aria-label="Add to cart" data-product-id="3"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16"><path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5"/></svg></button></div>
-                </div>
-            </article>
-
-            <article class="p-card" data-product-id="4">
-                <div class="p-media">
-                    <span class="p-badge">NEW ARRIVAL</span>
-                    <button class="p-wish js-toggle-wishlist" type="button" aria-label="Add to wishlist" data-product-id="4">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16"><path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/></svg>
-                    </button>
-                    <img src="https://images.unsplash.com/photo-1766601269422-a6673de6daf3?auto=format&fit=crop&q=80&w=900" alt="Nova Mech Keyboard" loading="lazy">
-                </div>
-                <div class="p-body">
-                    <div class="p-rating"><span class="stars">★★★★☆</span><span class="score">(4.9)</span></div>
-                    <div class="p-cat">ACCESSORIES</div>
-                    <h3 class="p-name">Nova Mech Keyboard</h3>
-                    <div class="p-bottom"><div class="p-price">$189.00</div><button class="p-cart js-add-to-cart" type="button" aria-label="Add to cart" data-product-id="4"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16"><path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5"/></svg></button></div>
-                </div>
-            </article>
-
-            <article class="p-card" data-product-id="5">
-                <div class="p-media">
-                    <button class="p-wish js-toggle-wishlist" type="button" aria-label="Add to wishlist" data-product-id="5">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16"><path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/></svg>
-                    </button>
-                    <img src="https://images.unsplash.com/photo-1653823815301-faf2f30db0bd?auto=format&fit=crop&q=80&w=900" alt="Horizon Ultrawide 49" loading="lazy">
-                </div>
-                <div class="p-body">
-                    <div class="p-rating"><span class="stars">★★★★☆</span><span class="score">(4.6)</span></div>
-                    <div class="p-cat">DISPLAYS</div>
-                    <h3 class="p-name">Horizon Ultrawide 49&quot;</h3>
-                    <div class="p-bottom"><div class="p-price">$1,299.00</div><button class="p-cart js-add-to-cart" type="button" aria-label="Add to cart" data-product-id="5"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16"><path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5"/></svg></button></div>
-                </div>
-            </article>
-
-            <article class="p-card" data-product-id="6">
-                <div class="p-media">
-                    <button class="p-wish js-toggle-wishlist" type="button" aria-label="Add to wishlist" data-product-id="6">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16"><path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/></svg>
-                    </button>
-                    <img src="https://images.unsplash.com/photo-1758348844348-acaf8d854665?auto=format&fit=crop&q=80&w=900" alt="Aero Stealth Watch" loading="lazy">
-                </div>
-                <div class="p-body">
-                    <div class="p-rating"><span class="stars">★★★★☆</span><span class="score">(4.5)</span></div>
-                    <div class="p-cat">WEARABLES</div>
-                    <h3 class="p-name">Aero Stealth Watch</h3>
-                    <div class="p-bottom"><div class="p-price">$399.00</div><button class="p-cart js-add-to-cart" type="button" aria-label="Add to cart" data-product-id="6"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16"><path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5"/></svg></button></div>
-                </div>
-            </article>
-        </div>
-
-        <div class="view-all-wrap">
-            <button class="view-all-btn" type="button">View All Products <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/></svg></button>
-        </div>
-    </section>
-
-    <!-- =========================
+        <!-- =========================
          STUDENT DISCOUNT
     ========================= -->
-    <section class="student-banner">
-        <div class="student-inner">
-            <div>
-                <h3 class="student-title">STUDENT DISCOUNT</h3>
-                <p class="student-sub">Verify your student status and get 15% off on your first purchase.</p>
+        <section class="student-banner">
+            <div class="student-inner">
+                <div>
+                    <h3 class="student-title">STUDENT DISCOUNT</h3>
+                    <p class="student-sub">Verify your student status and get 15% off on your first purchase.</p>
+                </div>
+                <button class="student-cta js-claim-offer" type="button">Claim Offer</button>
             </div>
-            <button class="student-cta js-claim-offer" type="button">Claim Offer</button>
-        </div>
-    </section>
+        </section>
 
-    <!-- =========================
+        <!-- =========================
          NEWSLETTER
     ========================= -->
-    <section class="newsletter" id="newsletter">
-        <div class="newsletter-card">
-            <h3 class="newsletter-title">JOIN THE TECH <span>REVOLUTION</span></h3>
-            <p class="newsletter-sub">Get early access to exclusive drops, deep tech insights, and member-only rewards.</p>
-            <form class="newsletter-form" id="newsletterForm">
-                <input type="email" name="email" placeholder="Enter your email" required>
-                <button type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-send" viewBox="0 0 16 16"><path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124L5.638 10.36 0.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576l-7.494 7.494Zm6.787-8.201L1.591 6.602l4.338 2.761 7.494-7.494Z"/></svg> Subscribe</button>
-            </form>
-            <p class="newsletter-legal">By subscribing you agree to our <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>.</p>
-        </div>
-    </section>
+        <section class="newsletter" id="newsletter">
+            <div class="newsletter-card">
+                <h3 class="newsletter-title">JOIN THE TECH <span>REVOLUTION</span></h3>
+                <p class="newsletter-sub">Get early access to exclusive drops, deep tech insights, and member-only
+                    rewards.</p>
+                <form class="newsletter-form" id="newsletterForm">
+                    <input name="email" placeholder="Enter your email" required="" type="email" />
+                    <button type="submit"><svg class="bi bi-send" fill="currentColor" height="18" viewbox="0 0 16 16"
+                            width="18" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124L5.638 10.36 0.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576l-7.494 7.494Zm6.787-8.201L1.591 6.602l4.338 2.761 7.494-7.494Z">
+                            </path>
+                        </svg> Subscribe</button>
+                </form>
+                <p class="newsletter-legal">By subscribing you agree to our <a href="#">Terms of Service</a> and <a
+                        href="#">Privacy Policy</a>.</p>
+            </div>
+        </section>
 
-    <!-- =========================
+        <!-- =========================
          FOOTER
     ========================= -->
-    <footer class="footer">
-        <div class="footer-top">
-            <div class="footer-brand">
-                <div class="izquierda">
-                    <div class="logo-caja">
-                        <a href="#" class="logo" aria-label="TechCore home">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cpu" viewBox="0 0 16 16"><path d="M5 0a.5.5 0 0 1 .5.5V2h1V.5a.5.5 0 0 1 1 0V2h1V.5a.5.5 0 0 1 1 0V2h1V.5a.5.5 0 0 1 1 0V2A2.5 2.5 0 0 1 14 4.5h1.5a.5.5 0 0 1 0 1H14v1h1.5a.5.5 0 0 1 0 1H14v1h1.5a.5.5 0 0 1 0 1H14v1h1.5a.5.5 0 0 1 0 1H14a2.5 2.5 0 0 1-2.5 2.5v1.5a.5.5 0 0 1-1 0V14h-1v1.5a.5.5 0 0 1-1 0V14h-1v1.5a.5.5 0 0 1-1 0V14h-1v1.5a.5.5 0 0 1-1 0V14A2.5 2.5 0 0 1 2 11.5H.5a.5.5 0 0 1 0-1H2v-1H.5a.5.5 0 0 1 0-1H2v-1H.5a.5.5 0 0 1 0-1H2v-1H.5a.5.5 0 0 1 0-1H2A2.5 2.5 0 0 1 4.5 2V.5A.5.5 0 0 1 5 0m-.5 3A1.5 1.5 0 0 0 3 4.5v7A1.5 1.5 0 0 0 4.5 13h7a1.5 1.5 0 0 0 1.5-1.5v-7A1.5 1.5 0 0 0 11.5 3z"/></svg>
-                        </a>
+        <footer class="footer">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <div class="izquierda">
+                        <div class="logo-caja">
+                            <a aria-label="TechCore home" class="logo" href="index.html">
+                                <svg class="bi bi-cpu" fill="currentColor" height="16" viewbox="0 0 16 16" width="16"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M5 0a.5.5 0 0 1 .5.5V2h1V.5a.5.5 0 0 1 1 0V2h1V.5a.5.5 0 0 1 1 0V2h1V.5a.5.5 0 0 1 1 0V2A2.5 2.5 0 0 1 14 4.5h1.5a.5.5 0 0 1 0 1H14v1h1.5a.5.5 0 0 1 0 1H14v1h1.5a.5.5 0 0 1 0 1H14v1h1.5a.5.5 0 0 1 0 1H14a2.5 2.5 0 0 1-2.5 2.5v1.5a.5.5 0 0 1-1 0V14h-1v1.5a.5.5 0 0 1-1 0V14h-1v1.5a.5.5 0 0 1-1 0V14h-1v1.5a.5.5 0 0 1-1 0V14A2.5 2.5 0 0 1 2 11.5H.5a.5.5 0 0 1 0-1H2v-1H.5a.5.5 0 0 1 0-1H2v-1H.5a.5.5 0 0 1 0-1H2v-1H.5a.5.5 0 0 1 0-1H2A2.5 2.5 0 0 1 4.5 2V.5A.5.5 0 0 1 5 0m-.5 3A1.5 1.5 0 0 0 3 4.5v7A1.5 1.5 0 0 0 4.5 13h7a1.5 1.5 0 0 0 1.5-1.5v-7A1.5 1.5 0 0 0 11.5 3z">
+                                    </path>
+                                </svg>
+                            </a>
+                        </div>
+                        <h1>TECH<span class="cambio">CORE</span></h1>
                     </div>
-                    <h1>TECH<span class="cambio">CORE</span></h1>
+                    <p class="footer-desc">We provide the tools to build your future. The most advanced tech store for
+                        creators, gamers, and innovators.</p>
+                    <div class="footer-social">
+                        <a aria-label="Twitter" href="#"><svg class="bi bi-twitter" fill="currentColor" height="18"
+                                viewbox="0 0 16 16" width="18" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q0-.213-.006-.425A6.7 6.7 0 0 0 16 3.542a6.6 6.6 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.28 3.28 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.015 4.381A3.3 3.3 0 0 1 .64 6.575v.045A3.29 3.29 0 0 0 3.277 9.85a3.3 3.3 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.58 6.58 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.3 9.3 0 0 0 5.026 15">
+                                </path>
+                            </svg></a>
+                        <a aria-label="Instagram" href="#"><svg class="bi bi-instagram" fill="currentColor" height="18"
+                                viewbox="0 0 16 16" width="18" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M8 0C5.829 0 5.556.01 4.703.047 3.85.085 3.238.244 2.7.453a3.9 3.9 0 0 0-1.4.92A3.9 3.9 0 0 0 .453 2.7c-.21.538-.368 1.15-.406 2.003C.01 5.556 0 5.829 0 8s.01 2.444.047 3.297c.038.853.196 1.465.406 2.003a3.9 3.9 0 0 0 .92 1.4 3.9 3.9 0 0 0 1.4.92c.538.21 1.15.368 2.003.406C5.556 15.99 5.829 16 8 16s2.444-.01 3.297-.047c.853-.038 1.465-.196 2.003-.406a3.9 3.9 0 0 0 1.4-.92 3.9 3.9 0 0 0 .92-1.4c.21-.538.368-1.15.406-2.003.037-.853.047-1.126.047-3.297s-.01-2.444-.047-3.297c-.038-.853-.196-1.465-.406-2.003a3.9 3.9 0 0 0-.92-1.4 3.9 3.9 0 0 0-1.4-.92C12.762.244 12.15.085 11.297.047 10.444.01 10.171 0 8 0m0 3.892A4.108 4.108 0 1 1 3.892 8 4.104 4.104 0 0 1 8 3.892m5.205-1.158a.96.96 0 1 1-.96-.96.96.96 0 0 1 .96.96">
+                                </path>
+                                <path d="M8 5.838A2.162 2.162 0 1 0 10.162 8 2.162 2.162 0 0 0 8 5.838"></path>
+                            </svg></a>
+                        <a aria-label="GitHub" href="#"><svg class="bi bi-github" fill="currentColor" height="18"
+                                viewbox="0 0 16 16" width="18" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8">
+                                </path>
+                            </svg></a>
+                        <a aria-label="LinkedIn" href="#"><svg class="bi bi-linkedin" fill="currentColor" height="18"
+                                viewbox="0 0 16 16" width="18" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.244c.837 0 1.358-.554 1.358-1.248-.015-.709-.521-1.248-1.342-1.248-.821 0-1.358.54-1.358 1.248 0 .694.521 1.248 1.327 1.248h.015zm4.908 8.244V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169H6.151c.03.678 0 7.225 0 7.225h2.4z">
+                                </path>
+                            </svg></a>
+                    </div>
                 </div>
-                <p class="footer-desc">We provide the tools to build your future. The most advanced tech store for creators, gamers, and innovators.</p>
-                <div class="footer-social">
-                    <a href="#" aria-label="Twitter"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16"><path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q0-.213-.006-.425A6.7 6.7 0 0 0 16 3.542a6.6 6.6 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.28 3.28 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.015 4.381A3.3 3.3 0 0 1 .64 6.575v.045A3.29 3.29 0 0 0 3.277 9.85a3.3 3.3 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.58 6.58 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.3 9.3 0 0 0 5.026 15"/></svg></a>
-                    <a href="#" aria-label="Instagram"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16"><path d="M8 0C5.829 0 5.556.01 4.703.047 3.85.085 3.238.244 2.7.453a3.9 3.9 0 0 0-1.4.92A3.9 3.9 0 0 0 .453 2.7c-.21.538-.368 1.15-.406 2.003C.01 5.556 0 5.829 0 8s.01 2.444.047 3.297c.038.853.196 1.465.406 2.003a3.9 3.9 0 0 0 .92 1.4 3.9 3.9 0 0 0 1.4.92c.538.21 1.15.368 2.003.406C5.556 15.99 5.829 16 8 16s2.444-.01 3.297-.047c.853-.038 1.465-.196 2.003-.406a3.9 3.9 0 0 0 1.4-.92 3.9 3.9 0 0 0 .92-1.4c.21-.538.368-1.15.406-2.003.037-.853.047-1.126.047-3.297s-.01-2.444-.047-3.297c-.038-.853-.196-1.465-.406-2.003a3.9 3.9 0 0 0-.92-1.4 3.9 3.9 0 0 0-1.4-.92C12.762.244 12.15.085 11.297.047 10.444.01 10.171 0 8 0m0 3.892A4.108 4.108 0 1 1 3.892 8 4.104 4.104 0 0 1 8 3.892m5.205-1.158a.96.96 0 1 1-.96-.96.96.96 0 0 1 .96.96"/><path d="M8 5.838A2.162 2.162 0 1 0 10.162 8 2.162 2.162 0 0 0 8 5.838"/></svg></a>
-                    <a href="#" aria-label="GitHub"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/></svg></a>
-                    <a href="#" aria-label="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16"><path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.244c.837 0 1.358-.554 1.358-1.248-.015-.709-.521-1.248-1.342-1.248-.821 0-1.358.54-1.358 1.248 0 .694.521 1.248 1.327 1.248h.015zm4.908 8.244V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169H6.151c.03.678 0 7.225 0 7.225h2.4z"/></svg></a>
+
+                <div class="footer-col">
+                    <h4>Products</h4>
+                    <a href="#">Laptops</a>
+                    <a href="#">Desktops</a>
+                    <a href="#">Smartphones</a>
+                    <a href="#">Accessories</a>
+                    <a href="#">Gaming Gear</a>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <a href="#">About Us</a>
+                    <a href="#">Careers</a>
+                    <a href="#">Press Kit</a>
+                    <a href="#">Contact</a>
+                    <a href="#">Store Locator</a>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Support</h4>
+                    <a href="#">Help Center</a>
+                    <a href="#">Shipping</a>
+                    <a href="#">Returns</a>
+                    <a href="#">Order Tracking</a>
+                    <a href="#">FAQ</a>
                 </div>
             </div>
 
-            <div class="footer-col">
-                <h4>Products</h4>
-                <a href="#">Laptops</a>
-                <a href="#">Desktops</a>
-                <a href="#">Smartphones</a>
-                <a href="#">Accessories</a>
-                <a href="#">Gaming Gear</a>
+            <div class="footer-bottom">
+                <p>© 2026 TechCore Systems Inc. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Use</a>
+                    <a href="#">Cookie Settings</a>
+                </div>
             </div>
 
-            <div class="footer-col">
-                <h4>Company</h4>
-                <a href="#">About Us</a>
-                <a href="#">Careers</a>
-                <a href="#">Press Kit</a>
-                <a href="#">Contact</a>
-                <a href="#">Store Locator</a>
-            </div>
-
-            <div class="footer-col">
-                <h4>Support</h4>
-                <a href="#">Help Center</a>
-                <a href="#">Shipping</a>
-                <a href="#">Returns</a>
-                <a href="#">Order Tracking</a>
-                <a href="#">FAQ</a>
-            </div>
-        </div>
-
-        <div class="footer-bottom">
-            <p>© 2026 TechCore Systems Inc. All rights reserved.</p>
-            <div class="footer-links">
-                <a href="#">Privacy Policy</a>
-                <a href="#">Terms of Use</a>
-                <a href="#">Cookie Settings</a>
-            </div>
-        </div>
-    </footer>
-
-</div>
+        </footer>
+    </div>
 </body>
+
 </html>

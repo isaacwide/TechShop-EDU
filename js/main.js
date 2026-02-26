@@ -88,7 +88,7 @@ function cargarProductos() {
 
                 cartBtn.addEventListener("click", function () {
                     localStorage.setItem('productoSeleccionado', JSON.stringify(item));
-                    window.location.href = "tienda.html";
+                    window.location.href = "producto.html";
                 });
 
                 pBottom.appendChild(pPrice);
@@ -185,7 +185,7 @@ function mostrarTodos(){
 
                 cartBtn.addEventListener("click", function () {
                     localStorage.setItem('productoSeleccionado', JSON.stringify(item));
-                    window.location.href = "tienda.html";
+                    window.location.href = "producto.html";
                 });
 
                 pBottom.appendChild(pPrice);

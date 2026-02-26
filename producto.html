@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/estilos.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <title>TECHCORE | Product</title>
+</head>
+
+<body>
+
+  <!-- HEADER (el tuyo) -->
+  <header class="encabezado fixed-top">
+    <div class="container">
+      <div class="contenedor-header d-flex align-items-center justify-content-between px-4 px-md-3 px-lg-5">
+        <div class="izquierda">
+          <div class="logo-caja">
+            <a class="logo" href="index.html">
+              <svg class="bi bi-cpu" fill="currentColor" height="16" viewBox="0 0 16 16" width="16"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M5 0a.5.5 0 0 1 .5.5V2h1V.5a.5.5 0 0 1 1 0V2h1V.5a.5.5 0 0 1 1 0V2h1V.5a.5.5 0 0 1 1 0V2A2.5 2.5 0 0 1 14 4.5h1.5a.5.5 0 0 1 0 1H14v1h1.5a.5.5 0 0 1 0 1H14v1h1.5a.5.5 0 0 1 0 1H14v1h1.5a.5.5 0 0 1 0 1H14a2.5 2.5 0 0 1-2.5 2.5v1.5a.5.5 0 0 1-1 0V14h-1v1.5a.5.5 0 0 1-1 0V14h-1v1.5a.5.5 0 0 1-1 0V14h-1v1.5a.5.5 0 0 1-1 0V14A2.5 2.5 0 0 1 2 11.5H.5a.5.5 0 0 1 0-1H2v-1H.5a.5.5 0 0 1 0-1H2v-1H.5a.5.5 0 0 1 0-1H2v-1H.5a.5.5 0 0 1 0-1H2A2.5 2.5 0 0 1 4.5 2V.5A.5.5 0 0 1 5 0m-.5 3A1.5 1.5 0 0 0 3 4.5v7A1.5 1.5 0 0 0 4.5 13h7a1.5 1.5 0 0 0 1.5-1.5v-7A1.5 1.5 0 0 0 11.5 3zM5 6.5A1.5 1.5 0 0 1 6.5 5h3A1.5 1.5 0 0 1 11 6.5v3A1.5 1.5 0 0 1 9.5 11h-3A1.5 1.5 0 0 1 5 9.5zM6.5 6a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5z" />
+              </svg>
+            </a>
+          </div>
+          <h1>TECH<span class="cambio">CORE</span></h1>
+        </div>
+        <nav class="menu d-none d-md-flex gap-4 gap-lg-5">
+          <a href="shop.html">Shop</a>
+          <a href="laptops.html">Laptops</a>
+          <a href="phones.html">Phones</a>
+          <a href="gaming.html">Gaming</a>
+          <a href="accessories.html">Accessories</a>
+        </nav>
+        <div class="derecha d-flex align-items-center gap-3 gap-lg-4">
+          <a class="imgs" href="#">
+            <svg class="bi bi-search" fill="currentColor" height="16" viewBox="0 0 16 16" width="16"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+            </svg>
+          </a>
+          <a class="imgs carrito" href="#">
+            <svg class="bi bi-cart3" fill="currentColor" height="16" viewBox="0 0 16 16" width="16"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
+            </svg>
+            <span class="badge-carrito" id="cartCount">0</span>
+          </a>
+          <a class="imgs" href="#">
+            <svg class="bi bi-person" fill="currentColor" height="16" viewBox="0 0 16 16" width="16"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="prod-main">
+
+    <div class="prod-container">
+
+      <!-- Breadcrumb / back -->
+      <a class="prod-back" href="javascript:history.back()">
+        <svg fill="currentColor" height="14" viewBox="0 0 16 16" width="14" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8" />
+        </svg>
+        Volver a la tienda
+      </a>
+
+      <!-- Dos columnas -->
+      <div class="prod-grid">
+
+        <!-- ── IZQUIERDA ── -->
+        <div class="prod-card prod-card--left">
+          <p class="prod-card__label">About</p>
+          <div id="product-display">
+            <!-- JS inserta: badge, img, categoria, nombre, rating, precio -->
+          </div>
+        </div>
+
+        <!-- ── DERECHA ── -->
+        <div class="prod-card prod-card--right">
+          <p class="prod-card__label">Information</p>
+
+          <div id="product-details">
+            <!-- JS inserta: descripcion -->
+          </div>
+
+          <div id="product-buy">
+            <form id="buy-form">
+              <label class="prod-label" for="cantidad">Cantidad</label>
+              <div class="prod-qty">
+                <button class="prod-qty__btn" type="button" onclick="
+                  const i=document.getElementById('cantidad');
+                  if(+i.value>1) i.value=+i.value-1;">−</button>
+                <input id="cantidad" min="1" name="cantidad" type="number" value="1">
+                <button class="prod-qty__btn" type="button" onclick="
+                  const i=document.getElementById('cantidad');
+                  i.value=+i.value+1;">+</button>
+              </div>
+              <button class="prod-buy-btn" type="submit">
+                <svg fill="currentColor" height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
+                </svg>
+                Añadir al carrito
+              </button>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="js/producto.js"></script>
+</body>
+
+</html>

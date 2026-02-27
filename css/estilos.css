@@ -11,14 +11,24 @@
     --color-purple-600: oklch(55.8% 0.288 305);
     --color-letra: #D4CFCF;
     --negro: #0D1111;
+
+    --accent: #8B5CF6;
+    --bg: #0a0a0a;
+    --card-bg: #111;
+    --card-border: rgba(255, 255, 255, 0.07);
+    --text: #fff;
+    --text-muted: #888;
+    --gold: #f59e0b;
+    --page-x: clamp(16px, 5vw, 100px); /* padding horizontal consistente */
 }
 
 /* ------ BASE------ */
 
 .layout-global {
-    width: min(1600px, 100%);
+    width: 100%;
     margin-inline: auto;
-    padding-inline: clamp(20px, 6vw, 140px);
+    /* Nota: quitamos el padding global para evitar doble margen con .container de Bootstrap */
+    padding-inline: 0;
 }
 
 body {
@@ -37,6 +47,8 @@ body {
     /* 🔥 clave */
     padding: 18px 0;
 }
+
+
 
 
 .encabezado {
@@ -61,6 +73,10 @@ body {
     display: flex;
     align-items: center;
     gap: 12px;
+}
+
+.izquierda a {
+    text-decoration: none;
 }
 
 .logo-caja {
@@ -164,6 +180,27 @@ h1 {
 .imgs svg:hover {
     color: var(--blanco);
     transform: scale(1.1);
+}
+
+/* Botón hamburguesa (menú móvil) */
+.mobile-menu-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    background: rgba(255, 255, 255, 0.06);
+    color: var(--blanco);
+    transition: 0.25s ease;
+}
+.mobile-menu-btn:hover {
+    background: rgba(255, 255, 255, 0.10);
+    transform: translateY(-1px);
+}
+.offcanvas .nav-link.active {
+    color: var(--azul) !important;
 }
 
 /* =========================
@@ -405,7 +442,7 @@ h1 {
 
 .numeros {
     padding: 30px 0;
-    padding-left: 100px;
+    padding-left: var(--page-x);
 
 
 }
@@ -443,7 +480,7 @@ h1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 60px 100px 0 100px;
+    padding: 60px var(--page-x) 0;
 }
 
 .brows h1 {
@@ -481,9 +518,7 @@ h1 {
 /****cajas de las categorias*/
 
 .productos-grid {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    gap: 20px;
+    /* Ahora este contenedor usa el grid de Bootstrap (.row + .col-*) */
     margin-top: 20px;
 }
 
@@ -619,14 +654,9 @@ h1 {
 /* ----------RESPONSIVE-MEDIA --------- */
 @media (max-width: 1285px) {
 
-    .container {
-        max-width: 100%;
-        padding-left: 0;
-        padding-right: 0;
-    }
 
     .numeros {
-        padding-left: 100px;
+        padding-left: var(--page-x);
     }
 }
 
@@ -692,9 +722,6 @@ h1 {
         right: 0;
     }
 
-    .productos-grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
 }
 
 
@@ -735,9 +762,6 @@ h1 {
     }
 
 
-    .productos-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
 }
 
 @media (max-width: 576px) {
@@ -777,9 +801,6 @@ h1 {
         padding-left: 0;
     }
 
-    .productos-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
 
 }
 
@@ -805,7 +826,7 @@ h1 {
     gap: 28px;
     opacity: 0.4;
     filter: grayscale(1);
-    padding: 0 100px;
+    padding: 0 var(--page-x);
 }
 
 .brands-inner span {
@@ -837,7 +858,7 @@ h1 {
     justify-content: space-between;
     align-items: center;
     gap: 20px;
-    padding: 0 100px;
+    padding: 0 var(--page-x);
 }
 
 .section-title {
@@ -885,7 +906,7 @@ h1 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 28px;
-    padding: 26px 100px 0;
+    padding: 26px var(--page-x) 0;
 }
 
 .p-card {
@@ -1064,7 +1085,7 @@ h1 {
 }
 
 .student-inner {
-    margin: 0 100px;
+    margin: 0 var(--page-x);
     background: var(--azul);
     border-radius: 34px;
     padding: 34px 38px;
@@ -1120,7 +1141,7 @@ h1 {
 }
 
 .newsletter-card {
-    margin: 0 100px;
+    margin: 0 var(--page-x);
     border-radius: 46px;
     padding: 54px 40px;
     background: linear-gradient(135deg, #0b2230, #17133a 55%, #2b0b43);
@@ -1569,5 +1590,283 @@ h1 {
     .category-cta-inner {
         flex-direction: column;
         align-items: flex-start;
+    }
+}
+
+/* ═══════════════════════════════════════════════
+   PRODUCTO.CSS — TechCore Product Page
+   Importar en producto.html después de estilos.css
+═══════════════════════════════════════════════ */
+
+/* ── Layout ─────────────────────────────────── */
+
+.prod-main {
+    background: var(--bg);
+    min-height: 100vh;
+    padding-top: 100px;
+    /* espacio para el header fijo */
+    padding-bottom: 4rem;
+}
+
+.prod-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+/* ── Back button ─────────────────────────────── */
+
+.prod-back {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    color: var(--text-muted);
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-family: 'Inter', sans-serif;
+    margin-bottom: 2rem;
+    transition: color 0.2s;
+}
+
+.prod-back:hover {
+    color: var(--text);
+}
+
+/* ── Grid dos columnas ───────────────────────── */
+
+.prod-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    align-items: start;
+}
+
+/* ── Cards ───────────────────────────────────── */
+
+.prod-card {
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: 16px;
+    padding: 2rem;
+    animation: fadeUp 0.4s ease both;
+}
+
+.prod-card--right {
+    animation-delay: 0.1s;
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(16px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.prod-card__label {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.7rem;
+    letter-spacing: 0.2em;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    margin-bottom: 1.25rem;
+}
+
+/* ── Imagen ──────────────────────────────────── */
+
+#product-display img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 1.25rem;
+    display: block;
+}
+
+/* ── Badge ───────────────────────────────────── */
+
+#product-display .p-badge {
+    display: inline-block;
+    background: var(--accent);
+    color: #fff;
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    padding: 3px 10px;
+    border-radius: 4px;
+    margin-bottom: 0.75rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* ── Categoría ───────────────────────────────── */
+
+#product-display .p-cat {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    color: var(--accent);
+    text-transform: uppercase;
+    margin-bottom: 0.35rem;
+}
+
+/* ── Nombre ──────────────────────────────────── */
+
+#product-display .p-name {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 0.6rem;
+    line-height: 1.3;
+}
+
+/* ── Rating ──────────────────────────────────── */
+
+#product-display .p-rating {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+#product-display .p-rating .stars {
+    color: var(--gold);
+    font-size: 0.95rem;
+    letter-spacing: 2px;
+}
+
+#product-display .p-rating .score {
+    color: var(--text-muted);
+    font-family: 'Inter', sans-serif;
+    font-size: 0.85rem;
+}
+
+/* ── Precio ──────────────────────────────────── */
+
+#product-display .p-price {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 900;
+    color: var(--text);
+    letter-spacing: -0.02em;
+}
+
+/* ── Separador ───────────────────────────────── */
+
+.prod-divider {
+    height: 1px;
+    background: var(--card-border);
+    margin: 1.25rem 0;
+}
+
+/* ── Descripción ─────────────────────────────── */
+
+#product-details p {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.95rem;
+    color: #bbb;
+    line-height: 1.75;
+    margin-bottom: 1.75rem;
+}
+
+/* ── Formulario ──────────────────────────────── */
+
+.prod-label {
+    display: block;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.72rem;
+    color: var(--text-muted);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+
+.prod-qty {
+    display: flex;
+    align-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 10px;
+    overflow: hidden;
+    width: fit-content;
+    margin-bottom: 1.25rem;
+}
+
+.prod-qty__btn {
+    background: rgba(255, 255, 255, 0.06);
+    border: none;
+    color: var(--text);
+    width: 42px;
+    height: 42px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background 0.2s;
+    font-family: 'Inter', sans-serif;
+}
+
+.prod-qty__btn:hover {
+    background: rgba(255, 255, 255, 0.14);
+}
+
+.prod-qty input[type="number"] {
+    background: transparent;
+    border: none;
+    color: var(--text);
+    width: 56px;
+    height: 42px;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+    -moz-appearance: textfield;
+    outline: none;
+}
+
+.prod-qty input::-webkit-inner-spin-button,
+.prod-qty input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+
+.prod-buy-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+    width: 100%;
+    background: var(--accent);
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 0.9rem 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: opacity 0.2s, transform 0.15s;
+}
+
+.prod-buy-btn:hover {
+    opacity: 0.88;
+}
+
+.prod-buy-btn:active {
+    transform: scale(0.98);
+}
+
+/* ── Responsive ──────────────────────────────── */
+
+@media (max-width: 768px) {
+    .prod-grid {
+        grid-template-columns: 1fr;
+    }
+
+    #product-display img {
+        height: 200px;
     }
 }

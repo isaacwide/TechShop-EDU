@@ -47,6 +47,8 @@ body {
 }
 
 
+
+
 .encabezado {
     background: linear-gradient(to right,
             rgba(0, 0, 0, 0.9),
@@ -69,6 +71,10 @@ body {
     display: flex;
     align-items: center;
     gap: 12px;
+}
+
+.izquierda a {
+    text-decoration: none;
 }
 
 .logo-caja {

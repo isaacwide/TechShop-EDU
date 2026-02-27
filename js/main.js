@@ -1,5 +1,38 @@
 const grid = document.getElementById("show-info");
 
+// extrae un objeto producto de una tarjeta, usando dataset cuando está presente
+function extractItemFromCard(card) {
+    if (card.dataset.product) {
+        try {
+            return JSON.parse(card.dataset.product);
+        } catch (e) {
+            console.warn('JSON inválido en data-product', e);
+        }
+    }
+    // fallback leyendo el DOM
+    const name = card.querySelector('.p-name')?.textContent.trim() || '';
+    const image = card.querySelector('img')?.src || '';
+    const priceText = card.querySelector('.p-price')?.textContent || '';
+    const price = parseFloat(priceText.replace(/[^0-9.-]+/g,'')) || 0;
+    const category = card.querySelector('.p-cat')?.textContent.trim() || '';
+    const ratingStr = card.querySelector('.p-rating .score')?.textContent || '';
+    const rating = parseFloat(ratingStr.replace(/[()]/g,'')) || 0;
+    const badge = card.querySelector('.p-badge')?.textContent.trim() || '';
+    const description = card.querySelector('.p-desc')?.textContent.trim() || '';
+    return { name, image, price, category, rating, badge, description };
+}
+
+// escucha global para clic en tarjetas (funciona en index y categorías)
+document.addEventListener('click', e => {
+    const card = e.target.closest('article.p-card');
+    if (!card) return;
+    if (e.target.closest('button')) return;
+    const item = extractItemFromCard(card);
+    if (!item) return;
+    localStorage.setItem('productoSeleccionado', JSON.stringify(item));
+    window.location.href = 'producto.html';
+});
+
 document.addEventListener('DOMContentLoaded', function () {
     cargarProductos();
 });
@@ -34,6 +67,7 @@ function cargarProductos() {
             productos.slice(0,6).forEach(item => {
                 let article = document.createElement("article");
                 article.className = "p-card";
+                article.dataset.product = JSON.stringify(item);
 
                 let pMedia = document.createElement("div");
                 pMedia.className = "p-media";
@@ -131,6 +165,7 @@ function mostrarTodos(){
             productos.forEach(item => {
                 let article = document.createElement("article");
                 article.className = "p-card";
+                article.dataset.product = JSON.stringify(item);
 
                 let pMedia = document.createElement("div");
                 pMedia.className = "p-media";

@@ -12,6 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
 function mostrarProducto(producto) {
     const display = document.getElementById("product-display"); // Columna izquierda: imagen y datos principales
     const details = document.getElementById("product-details"); // Columna derecha: descripción
+    const statusEl = document.getElementById("product-status"); // Status del stock
 
     // Actualiza el título de la pestaña del navegador
     document.title = `TECHCORE | ${producto.name}`;
@@ -45,7 +46,7 @@ function mostrarProducto(producto) {
     // Calificación con estrellas
     let rating = document.createElement("div");
     rating.className = "p-rating";
-    rating.innerHTML = `<span class="stars">★★★★★</span><span class="score">${producto.rating}</span>`;
+    rating.innerHTML = `<span class="stars">★★★★★</span><span class="score">${producto.rating} (234 reviews)</span>`;
     display.appendChild(rating);
 
     // Línea divisora
@@ -65,6 +66,9 @@ function mostrarProducto(producto) {
         descripcion.textContent = producto.description;
         details.appendChild(descripcion);
     }
+
+    // Status de stock
+    statusEl.textContent = "In Stock - Ready to Ship";
 }
 
 // Agrega el producto al carrito al enviar el formulario
@@ -75,4 +79,10 @@ document.getElementById("buy-form").addEventListener("submit", function (e) {
     agregarAlCarrito(producto, cantidad); // Llama a la función del carrito con el producto y cantidad
     this.reset(); // Reinicia el formulario a sus valores por defecto
     alert(`✅ Agregado al carrito: ${cantidad} x ${producto.name}`);
+});
+
+// Evento para el botón de favoritos
+document.getElementById("favorite-btn").addEventListener("click", function (e) {
+    e.preventDefault(); // Evita el comportamiento por defecto del botón
+    this.classList.toggle("liked"); // Agrega o quita la clase "liked"
 });
